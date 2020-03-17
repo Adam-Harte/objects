@@ -1,5 +1,5 @@
 const person = {
-  name: 'Adam',
+  'first name': 'Adam',
   age: 27,
   hobbies: ['tennis', 'reading'],
   greet: function() {
@@ -22,3 +22,6 @@ delete person.age;
 person.greet = undefined; //not recommended to assing properties/variables to undefined
 person.hobbies = null;
 console.log(person);
+
+//bracket notation
+console.log(person['first name']);
