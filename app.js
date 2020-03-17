@@ -36,3 +36,8 @@ const movie = {
 };
 
 console.log(movie);
+
+//for in
+for (const key in person) {
+  console.log(key);
+}
