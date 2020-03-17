@@ -25,3 +25,14 @@ console.log(person);
 
 //bracket notation
 console.log(person['first name']);
+
+//shorthand property syntax
+const title = 'The Dark Knight';
+const releaseDate = 2008;
+
+const movie = {
+  title,
+  releaseDate
+};
+
+console.log(movie);
