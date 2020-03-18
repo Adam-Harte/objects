@@ -95,3 +95,12 @@ const obj = {
 };
 
 obj.displayInfo();
+
+//method shorthand syntax
+const shortObj = {
+  greet() {
+    console.log('this method was created with shorthand syntax');
+  }
+};
+
+shortObj.greet();
