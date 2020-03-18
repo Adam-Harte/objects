@@ -41,3 +41,13 @@ console.log(movie);
 for (const key in person) {
   console.log(key);
 }
+
+//spread operator
+const person2 = {
+  ...person,
+  hobbies: [...person.hobbies, 'Cooking']
+};
+person2.age = 30;
+
+console.log(person2);
+console.log(person);
