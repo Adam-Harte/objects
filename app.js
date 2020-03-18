@@ -20,7 +20,7 @@ console.log(person);
 //deleting properties
 delete person.age;
 person.greet = undefined; //not recommended to assing properties/variables to undefined
-person.hobbies = null;
+person.greet = null;
 console.log(person);
 
 //bracket notation
@@ -132,3 +132,25 @@ for (let key of Object.keys(person2)) {
 for (let value of Object.values(person3)) {
   console.log(value);
 }
+
+//getters and setters
+const book = {
+  set title(value) {
+    this._title = value.trim();
+  },
+  get title() {
+    return this._title;
+  },
+  set published(value) {
+    this._published = `* ${value}`;
+  },
+  get published() {
+    return this._published;
+  }
+};
+
+book.title = 'stormlight';
+book.published = '2014';
+
+console.log(book.title);
+console.log(book.published);
