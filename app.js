@@ -113,6 +113,7 @@ const weird = {
 };
 
 let { talk } = weird;
-talk();
+talk.call(weird);
+talk.apply(weird);
 talk = talk.bind(weird);
 talk();

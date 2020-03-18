@@ -107,7 +107,9 @@
       therefore has this connected to the global window object. To fix this we
       can use bind, call or apply to re configure what this new pulled out
       method variables this is connected to in this case we pass it the original
-      object.
+      object. The difference between bind, call and apply is that bind returns a
+      new function with the this configuration set whereas call and apply
+      execute the exisitng function with the this changed to what you pass it.
     </p>
   </body>
 </html>
