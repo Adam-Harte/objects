@@ -57,5 +57,18 @@
       values, that way you can copy objects and then alter the properties you
       need.
     </p>
+    <h3>Object Destructuring</h3>
+    <p>
+      Object destructuring allows us to pull out key value pairs and store them
+      in a variable with the same name as the key. You do this by creating a
+      variable object with all the key values you want to pull out and assign it
+      to that object e.g. { prop1, prop2 } = props. Any remaining propereties
+      you can gorup together in destructuring with the spread operator e.g. {
+      prop1, prop2, ...otherProps } = props. Finally we can rename these
+      desctructured variables by assigning a new name following a colon of the
+      original key name e.g. { prop1: newProp } = props. This allows us to
+      access object properties without the need for the dot ot bracket
+      notations.
+    </p>
   </body>
 </html>

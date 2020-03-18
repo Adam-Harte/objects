@@ -51,3 +51,10 @@ person2.age = 30;
 
 console.log(person2);
 console.log(person);
+
+//object destructuring
+const { age, hobbies: activities, ...otherProps } = person;
+
+console.log(age);
+console.log(activities);
+console.log(otherProps);
