@@ -99,5 +99,15 @@
       and instead follow the key name with the parenthesis and function body
       e.g. { method() { } }
     </p>
+    <h3>Tjis Weird Behaviour</h3>
+    <p>
+      The this keyword can cause problems when destructuring objects in
+      particular methods as when you go to call them you have lost the this
+      connection to the object as this is now pulled out into a variable and
+      therefore has this connected to the global window object. To fix this we
+      can use bind, call or apply to re configure what this new pulled out
+      method variables this is connected to in this case we pass it the original
+      object.
+    </p>
   </body>
 </html>

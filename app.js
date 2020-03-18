@@ -104,3 +104,15 @@ const shortObj = {
 };
 
 shortObj.greet();
+
+//this weird behaviour
+const weird = {
+  talk() {
+    console.log('im a weird method if not bound correctly');
+  }
+};
+
+let { talk } = weird;
+talk();
+talk = talk.bind(weird);
+talk();
