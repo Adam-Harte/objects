@@ -66,3 +66,18 @@ person3.age = 21;
 
 console.log(person3);
 console.log(person);
+
+//checking property existence
+if ('age' in person) {
+  console.log('exists');
+}
+
+if ('name' in person) {
+  console.log('doesnt exist');
+}
+
+if (person2.hobbies === undefined) {
+  console.log('doesnt exist');
+} else {
+  console.log('exists');
+}
