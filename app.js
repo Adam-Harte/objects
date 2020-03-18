@@ -81,3 +81,17 @@ if (person2.hobbies === undefined) {
 } else {
   console.log('exists');
 }
+
+//this
+const obj = {
+  info: {
+    name: 'obj',
+    created: 'today'
+  },
+  displayInfo: function() {
+    console.log(this.info.name);
+    console.log(this.info.created);
+  }
+};
+
+obj.displayInfo();
