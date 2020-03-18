@@ -58,3 +58,11 @@ const { age, hobbies: activities, ...otherProps } = person;
 console.log(age);
 console.log(activities);
 console.log(otherProps);
+
+//object assign
+const person3 = Object.assign({}, person);
+
+person3.age = 21;
+
+console.log(person3);
+console.log(person);
