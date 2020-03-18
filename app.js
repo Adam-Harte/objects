@@ -117,3 +117,18 @@ talk.call(weird);
 talk.apply(weird);
 talk = talk.bind(weird);
 talk();
+
+//Object entries, keys and values
+
+for (let [key, value] of Object.entries(person)) {
+  console.log(key);
+  console.log(value);
+}
+
+for (let key of Object.keys(person2)) {
+  console.log(key);
+}
+
+for (let value of Object.values(person3)) {
+  console.log(value);
+}
